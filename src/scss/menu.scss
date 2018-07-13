@@ -1,0 +1,57 @@
+.main-menu{
+    &-nav{
+        [class*="icon-"]{
+            padding: 1rem;
+        }
+        [class*="icon-"]::before{
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+        [class*="icon-"]:hover::before{
+            color: color(color);
+        }
+        @include to(l){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+#main-menu-toggle{
+    @include from(l){
+        display: none;
+    }
+}
+.main-menu{
+    @extend %list;
+    @include to(l){
+        background: white;
+        width: 100%;
+        display: none;
+    }
+    @include from(l){
+        display: flex;
+    }
+
+    &__item{
+        a{
+            line-height: 2rem;
+            padding: 0 1rem;
+            // color: $app-font-color;
+            @include from(l){
+                color: white;
+                &:hover{
+                    color: color(color);
+                }
+            }
+        }
+    }
+    &-options{
+        display: flex;
+        .icon-basket{
+            @include from(l){
+                display: none;
+            }
+        }
+    }
+}

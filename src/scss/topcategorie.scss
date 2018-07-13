@@ -1,0 +1,8 @@
+.topcategories{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @include from(l){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

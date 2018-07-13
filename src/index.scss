@@ -1,0 +1,25 @@
+@import "config/config";
+@import "~sedna/bin/sedna";
+
+@include init();
+@include sn-container-item();
+@include coreGrid();
+@include flexCssHelpers();
+
+[class*="icon-"]::before{
+    position: relative;
+    top: 4px;
+}
+
+$region-divider-bg: #F5F5F5;
+
+@import "scss/header";
+@import "scss/menu";
+@import "scss/button";
+@import "scss/grid";
+@import "scss/startproduct";
+@import "scss/product";
+@import "scss/testimonial";
+@import "scss/services";
+@import "scss/sub-banner";
+@import "scss/topcategorie";

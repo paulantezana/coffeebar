@@ -1,0 +1,9 @@
+.startproduct{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: $region-divider-bg;
+    @include from(l){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

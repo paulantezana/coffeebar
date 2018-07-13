@@ -1,0 +1,14 @@
+.button{
+    background: #ffbf01;
+    background: linear-gradient(to bottom,#eab92d 0%,#f7bd11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d',endColorstr='#f7bd11',GradientType=1);
+    border-radius: 25px;
+    color: #000;
+    float: left;
+    font: 400 16px/22px "Philosopher",Helvetica,sans-serif;
+    letter-spacing: .8px;
+    overflow: hidden;
+    padding: 9px 20px;
+    position: relative;
+    text-transform: capitalize;
+}

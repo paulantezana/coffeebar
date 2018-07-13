@@ -1,0 +1,16 @@
+.services-container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: $region-divider-bg;
+    @include from(l){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+.region{
+    .region__title{
+        text-align: center;
+        font-size: 2rem;
+        color: color(inverse);
+    }
+}

@@ -1,0 +1,23 @@
+extends blocks/template
+block main
+    .sn-container.startproduct
+        .sn-item.l-50
+            img(src="assets/about.png", alt="about")
+        .sn-item.l-50
+            article
+                h2 Drink Our Coffee & Tea Store
+                p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                a(href="").button lee mas
+    .sn-container
+        .sn-item
+            include blocks/product
+    .sn-container.sub-banner
+        .sn-item.m-50
+            .sub-banner__item
+                img(src="assets/subbanner-01.jpg", alt="banner")
+        .sn-item.m-50
+            .sub-banner__item
+                img(src="assets/subbanner-02.jpg", alt="banner")
+    include blocks/testimonial
+    include blocks/services
+    include blocks/topcategories
