@@ -14,7 +14,7 @@ module.exports = {
     },
     devServer: {
         contentBase : path.join(__dirname, "dist"),
-        compress    : true,
+        compress    : false,
         port        : 3000,
         open        : true,
         stats       : 'errors-only',
@@ -30,7 +30,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             url: false,
-                            minimize: true,
+                            minimize: false,
                             sourceMap: true,
                             // modules: true,
                             // localIdentName: '[local]__[hash:base64:5]',
@@ -82,7 +82,7 @@ module.exports = {
             minify      : {
                 collapseWhitespace: false
             },
-            hash        : true,
+            hash        : false,
             template    : './src/index.pug',
         })
     ]
